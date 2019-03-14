@@ -1,4 +1,6 @@
-﻿using SharpSteam;
+﻿#pragma warning disable CS0246 // Le nom de type ou d'espace de noms 'SharpSteam' est introuvable (vous manque-t-il une directive using ou une référence d'assembly ?)
+using SharpSteam;
+#pragma warning restore CS0246 // Le nom de type ou d'espace de noms 'SharpSteam' est introuvable (vous manque-t-il une directive using ou une référence d'assembly ?)
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,8 +9,12 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows;
+#pragma warning disable CS0246 // Le nom de type ou d'espace de noms 'VDFParser' est introuvable (vous manque-t-il une directive using ou une référence d'assembly ?)
 using VDFParser;
+#pragma warning restore CS0246 // Le nom de type ou d'espace de noms 'VDFParser' est introuvable (vous manque-t-il une directive using ou une référence d'assembly ?)
+#pragma warning disable CS0246 // Le nom de type ou d'espace de noms 'VDFParser' est introuvable (vous manque-t-il une directive using ou une référence d'assembly ?)
 using VDFParser.Models;
+#pragma warning restore CS0246 // Le nom de type ou d'espace de noms 'VDFParser' est introuvable (vous manque-t-il une directive using ou une référence d'assembly ?)
 
 namespace UWPHook
 {

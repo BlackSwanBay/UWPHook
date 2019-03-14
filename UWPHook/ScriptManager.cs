@@ -1,6 +1,8 @@
 ﻿using System.Collections.ObjectModel;
-using System.Management.Automation;
-using System.Management.Automation.Runspaces;
+#pragma warning disable CS0234 // Le nom de type ou d'espace de noms 'Automation' n'existe pas dans l'espace de noms 'System.Management' (vous manque-t-il une référence d'assembly ?)
+#pragma warning restore CS0234 // Le nom de type ou d'espace de noms 'Automation' n'existe pas dans l'espace de noms 'System.Management' (vous manque-t-il une référence d'assembly ?)
+#pragma warning disable CS0234 // Le nom de type ou d'espace de noms 'Automation' n'existe pas dans l'espace de noms 'System.Management' (vous manque-t-il une référence d'assembly ?)
+#pragma warning restore CS0234 // Le nom de type ou d'espace de noms 'Automation' n'existe pas dans l'espace de noms 'System.Management' (vous manque-t-il une référence d'assembly ?)
 using System.Text;
 
 namespace UWPHook
@@ -8,8 +10,10 @@ namespace UWPHook
     /// <summary>
     /// Functions related to Windows powershell
     /// </summary>
-    static class ScriptManager
+    internal static class ScriptManager
     {
+        private static readonly object RunspaceFactory;
+
         public static string RunScript(string scriptText)
         {
             // create Powershell runspace
